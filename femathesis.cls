@@ -1,6 +1,6 @@
 % Identification        ==================================================
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{femathesis}[2025/12/31 LaTeX document class for Undergraduate Thesis is the Faculty of Engineering Mechanics and Automation (FEMA), Vietnam National University Hanoi, University of Engineering and Technology (VNU-UET)]
+\ProvidesClass{femathesis}[2025/12/13 LaTeX document class for Undergraduate Thesis is the Faculty of Engineering Mechanics and Automation (FEMA), Vietnam National University Hanoi, University of Engineering and Technology (VNU-UET)]
 
 % Preliminary declarations      ==================================================
 \RequirePackage{amsmath,amssymb,siunitx}
