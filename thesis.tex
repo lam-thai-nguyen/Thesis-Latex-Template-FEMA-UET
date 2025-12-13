@@ -1,0 +1,312 @@
+\documentclass[thesis]{femathesis}
+
+\usepackage{blindtext}
+\usepackage[hidelinks]{hyperref}
+\usepackage{booktabs,makecell,multirow,multicol}
+
+\begin{document}
+
+% Cover pages | Trang bìa 
+\studentname{Họ và Tên}
+\title{Tên đề tài}
+\major{Công nghệ kỹ thuật Cơ điện tử}
+\year{2026}
+\supervisor{TS. Họ và Tên}
+\cosupervisor{ThS. Họ và Tên}
+\englishtitle{Thesis Title}
+\englishmajor{Mechatronics Engineering}
+\englishsupervisor{Dr. Họ và Tên}
+\englishcosupervisor{MSc. Họ và Tên}
+\makecovers
+
+
+% Abstract | Tóm tắt
+\begin{preamble}{Tóm tắt}
+\textbf{Abstract:}
+Gợi ý của tôi: Phần tóm tắt nên (i) viết trong một đoạn văn duy nhất (không xuống dòng), (ii) trả lời được các câu hỏi sau một cách ngắn gọn: (a) đề tài giải quyết vấn đề gì, (b) tính cấp thiết của đề tài, (c) các nghiên cứu trước đó đã giải quyết được gì và chưa giải quyết được gì, (d) phương pháp đề xuất, (e) kết quả định lượng của phương pháp đề xuất, (f) hướng phát triển. 
+
+\textit{\textbf{Keywords:} \LaTeX~template, FEMA, VNU--UET}
+\end{preamble}
+
+
+\begin{preamble}{Abstract}
+\textbf{Tóm tắt:}
+My suggestions: The abstract should (i) be written as a single paragraph (i.e. without line break), (ii) answer the following questions concisely: (a) what problems are addressed, (b) why it is significant to address those problems, (c) what has been done and what the research gap is, (d) what the proposed method is, (e) quantitative results, (f) future works. 
+
+\textit{\textbf{Từ khóa:} \LaTeX~template, FEMA, VNU--UET}
+\end{preamble}
+
+
+% Acknowledgement | Lời cảm ơn
+\begin{preamble}{Lời cảm ơn}
+
+\hspace*{1.25em} Các bạn tự làm phần này
+
+\hspace*{1.25em} ...
+\end{preamble}
+
+
+% Statement of Authenticity | Lời cam đoan
+\begin{preamble}{Lời cam đoan}
+\hspace*{1.25em} Các bạn tự làm phần này
+
+\hspace*{1.25em} ...
+
+\vspace{2em}
+
+\begin{flushright}
+    \begin{minipage}{7cm}
+    \centering
+    Hà Nội, ngày  ...  tháng  ...  năm 2026\\
+    Người cam đoan\\[4em]
+
+    Họ và Tên
+    \end{minipage}
+\end{flushright}
+
+\end{preamble}
+
+
+% Table of content | Mục lục 
+\begin{contentlisting}
+\tableofcontents
+\listoffigures
+\listoftables
+
+\begin{contentlistingsection}{Các từ viết tắt}
+Gợi ý của tôi: Nhớ sắp xếp các từ viết tắt theo thứ tự bảng chữ cái tiếng Anh
+
+AI: Artificial Intelligence -- Trí tuệ nhân tạo
+
+BB: Bounding Box -- Hộp giới hạn
+
+CV: Computer Vision -- Thị giác máy tính
+
+DL: Deep Learning -- Học sâu
+
+E
+
+F
+
+...
+\end{contentlistingsection}
+\end{contentlisting}
+
+
+% Overview | Mở đầu
+\chapterstar{Mở đầu}
+Gợi ý của tôi: Phần mở đầu không nên viết dài hơn 2 mặt giấy. Nếu thực sự có nhiều thứ để viết, hãy viết ở các chương.
+
+\sectionstar{Tính cấp thiết của đề tài}
+Gợi ý của tôi: Cần trả lời các câu hỏi sau trong 1--2 câu: đề tài (i) giải quyết vấn đề gì, (ii) vì sao quan trọng, (iii) các nghiên cứu trước đó đã giải quyết được gì và chưa giải quyết được gì. 
+
+\sectionstar{Ý nghĩa khoa học và thực tiễn}
+Gợi ý của tôi: Cần trả lời các câu hỏi sau trong 1--2 câu: đề tài (i) giúp gì cho lĩnh vực học thuật, (ii) giúp gì cho đời sống (ứng dụng thực tế là gì).
+
+\sectionstar{Đối tượng và phương pháp nghiên cứu}
+Gợi ý của tôi: Cần trả lời các câu hỏi sau: đề tài (i) làm cái gì (nhắc lại vì đây là đối tượng), (ii) làm như thế nào (đây là phương pháp).
+
+
+\sectionstar{Nội dung nghiên cứu}
+Gợi ý của tôi: Cần trả lời các câu hỏi sau: (i) đóng góp của đồ án tốt nghiệp là gì (liệt kê), (ii) các chương sau bàn luận vấn đề gì.
+
+
+% Chapter 1 | Chương 1
+\chapter{Cách tạo chương, mục, tiểu mục, hình vẽ, bảng biểu}
+\section{Mục}
+\subsection{Tiểu mục}
+\blindtext
+
+\subsection{Tiểu mục}
+Thông thường khi muốn liệt kê tôi làm như sau.
+
+\begin{itemize}
+    \item \textbf{Trí tuệ nhân tạo.} [tầm 2--5 dòng]
+    \item \textbf{Học máy.} [tầm 2--5 dòng]
+    \item \textbf{Học sâu.} [tầm 2--5 dòng]
+\end{itemize}
+
+Tuy nhiên nếu mỗi đối tượng chiếm rất nhiều dòng, gây xao nhãng và xấu, cân nhắc sử dụng đoạn văn như sau. 
+
+\noindent\textbf{Trí tuệ nhân tạo.} [trên 8 dòng]
+
+\noindent\textbf{Học máy.} [trên 8 dòng]
+
+\noindent\textbf{Học sâu.} [trên 8 dòng]
+
+Đây chỉ là gợi ý, hãy sáng tạo.
+
+
+\section{Hình vẽ và bảng biểu}
+\subsection{Hình vẽ}
+\begin{figure}[h]{Logo UET}
+    \centering
+    \includegraphics[width=0.2\linewidth]{UET logo.pdf}
+    \label{fig:place-holder}
+\end{figure}
+
+
+\subsection{Bảng biểu}
+Thông tin hữu ích: Trong các bài báo khoa học, các bảng thường không có dòng kẻ dọc. Ví dụ, Bảng~\ref{tab:ex2} sẽ được ưa chuộng hơn Bảng~\ref{tab:ex1}.
+
+\begin{table}[h]{Số cạnh của các đa giác phổ biến.}
+    \label{tab:ex1}
+    \centering\small
+    \begin{tabular}{|l|c|}
+        \hline
+        Đa giác & Số cạnh \\
+        \hline
+        Tam giác & 3 \\
+        \hline
+        Tứ giác & 4  \\
+        \hline
+        Ngũ giác & 5 \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[h]{Số cạnh của các đa giác phổ biến.}
+    \label{tab:ex2}
+    \centering\small
+    \begin{tabular}{lc}
+        \toprule
+        Đa giác & Số cạnh \\
+        \midrule
+        Tam giác & 3 \\
+        Tứ giác & 4  \\
+        Ngũ giác & 5 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\begin{table}[]{Ví dụ về bảng phức tạp.}
+    \label{tab:detection-perf}
+    \centering\small
+    \begin{tabular}{lccccccccc}
+        \toprule
+        \multirow{2}{*}{Mô hình} & \multicolumn{3}{c}{Điều kiện x} & \multicolumn{3}{c}{Điều kiện y} & \multicolumn{3}{c}{Điều kiện z} \\
+        \cmidrule(lr){2-4}\cmidrule(lr){5-7}\cmidrule(lr){8-10}
+         & $F_1$ & $P$ & $R$ & $F_1$ & $P$ & $R$ & $F_1$ & $P$ & $R$ \\
+        
+        \midrule
+        \multicolumn{10}{c}{Đối tượng a}\\
+        
+        \midrule
+        ABC & ... & ... & ... & ... & ... & ... & ... & ... & ... \\ 
+        DEF & ... & ... & ... & ... & ... & ... & ... & ... & ... \\
+        GHI & ... & ... & ... & ... & ... & ... & ... & ... & ... \\
+        
+        \midrule
+        \multicolumn{10}{c}{Đối tượng b}\\
+         
+        \midrule
+        ABC & ... & ... & ... & ... & ... & ... & ... & ... & ... \\ 
+        DEF & ... & ... & ... & ... & ... & ... & ... & ... & ... \\
+        GHI & ... & ... & ... & ... & ... & ... & ... & ... & ... \\
+        
+        \midrule
+        \multicolumn{10}{c}{Đối tượng c}\\
+        
+        \midrule
+        ABC & ... & ... & ... & ... & ... & ... & ... & ... & ... \\ 
+        DEF & ... & ... & ... & ... & ... & ... & ... & ... & ... \\
+        GHI & ... & ... & ... & ... & ... & ... & ... & ... & ... \\
+
+        \midrule
+        \multicolumn{10}{c}{Đối tượng d}\\
+        
+        \midrule
+        ABC & ... & ... & ... & ... & ... & ... & ... & ... & ... \\ 
+        DEF & ... & ... & ... & ... & ... & ... & ... & ... & ... \\
+        GHI & ... & ... & ... & ... & ... & ... & ... & ... & ... \\
+
+        \midrule
+        \multicolumn{10}{c}{Đối tượng e}\\
+        
+        \midrule
+        ABC & ... & ... & ... & ... & ... & ... & ... & ... & ... \\ 
+        DEF & ... & ... & ... & ... & ... & ... & ... & ... & ... \\
+        GHI & ... & ... & ... & ... & ... & ... & ... & ... & ... \\
+
+        \midrule
+        \multicolumn{10}{c}{Đối tượng f}\\
+        
+        \midrule
+        ABC & ... & ... & ... & ... & ... & ... & ... & ... & ... \\ 
+        DEF & ... & ... & ... & ... & ... & ... & ... & ... & ... \\
+        GHI & ... & ... & ... & ... & ... & ... & ... & ... & ... \\
+
+        \midrule
+        \multicolumn{10}{c}{Đối tượng g}\\
+        
+        \midrule
+        ABC & ... & ... & ... & ... & ... & ... & ... & ... & ... \\ 
+        DEF & ... & ... & ... & ... & ... & ... & ... & ... & ... \\
+        GHI & ... & ... & ... & ... & ... & ... & ... & ... & ... \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+
+% Chapter 2 | Chương 2
+\chapter{Kỹ thuật viết bài đến từ kinh nghiệm}
+\section{Viết tắt thế nào}
+Nếu bạn muốn viết tắt tiếng Việt có thể làm như sau: tôi yêu Việt Nam (VN). VN là nơi tôi sinh ra. Nếu bạn muốn viết tắt tiếng Anh có thể làm như sau: Tôi yêu Mỹ (United States of America -- USA). USA là nơi tôi muốn đến. Đây là một trường hợp không tốt: Tôi thích Anh Quốc (UK).
+
+Trong trường hợp từ tiếng Việt nghe không thuận tai và khó hình dung do đã được dịch từ tiếng Anh, có thể làm như sau: cơ chế chú ý (attention module) trong học máy là phương pháp đánh giá mức độ quan trọng của từng thành phần trong một chuỗi. Sau đó, khi nhắc tới ``cơ chế chú ý'', bạn không cần kèm phiên bản tiếng Anh nữa.
+
+\section{Viết phương trình thế nào}
+Tôi sẽ đưa ra hai ví dụ, cho dễ hình dung, như sau.
+
+\vspace{1cm}
+Ví dụ 1: Công thức trên được trình bày như sau
+
+\begin{equation}
+    f(x) = 2x+a
+\end{equation}
+
+trong đó, $a$ là ...
+
+\vspace{0.5cm}
+Ví dụ 2: Công thức trên được trình bày như sau
+\begin{equation}
+    f(x) = 2x+a\,,
+\end{equation}
+trong đó, $a$ là ...
+
+\vspace{1cm}
+Lỗi sai của ví dụ 1 là tách một câu văn thành 3 đoạn văn.
+
+
+% Conclusion and future works | Kết luận và hướng phát triển
+\chapterstar{Kết luận và hướng phát triển}
+\sectionstar{Kết luận}
+Gợi ý của tôi: Nêu lại các phát hiện, kết quả định tính chính.
+
+\sectionstar{Hướng phát triển}
+Gợi ý của tôi: Nêu mặt hạn chế, từ đó dẫn tới hướng phát triển.
+
+
+% Appendix | Phụ lục
+\appendix
+\chapter{Title}
+\blindtext
+
+\chapter{Title}
+\blindtext
+
+
+% References | Tài liệu tham khảo
+\begin{thebibliography}{99}
+\begin{bibsection}{Tiếng Việt}
+\bibitem{vn1}
+    Hãy đọc kỹ hướng dẫn của Khoa
+\end{bibsection}
+
+\begin{bibsection}{Tiếng Anh}
+\bibitem{en1}
+	Read the instructions carefully
+\end{bibsection}
+\end{thebibliography}
+
+\end{document}

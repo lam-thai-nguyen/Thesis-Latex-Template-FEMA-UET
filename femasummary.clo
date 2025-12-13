@@ -1,0 +1,180 @@
+\ProvidesFile{femasummary.clo}
+
+\newdimen\@sb \@sb=1.3pt
+\renewcommand\normalsize{%
+	\@setfontsize\normalsize{11pt}{17pt}
+	\abovedisplayskip 10\@sb \@plus2\@sb \@minus5\@sb
+	\abovedisplayshortskip \z@ \@plus3\@sb
+	\belowdisplayshortskip 6\@sb \@plus3\@sb \@minus3\@sb
+	\belowdisplayskip \abovedisplayskip
+	\let\@listi\@listI}
+\normalsize
+\ifx\MakeRobust\@undefined \else
+	 \MakeRobust\normalsize
+\fi
+\DeclareRobustCommand\small{%
+	\@setfontsize\small{7.62\@sb}{11.7\@sb}%
+	\abovedisplayskip 8.5\@sb \@plus3\@sb \@minus4\@sb
+	\abovedisplayshortskip \z@ \@plus2\@sb
+	\belowdisplayshortskip 4\@sb \@plus2\@sb \@minus2\@sb
+	\def\@listi{\leftmargin\leftmargini
+		\parsep 4pt \topsep\z@ \itemsep\z@
+		\itemsep \parsep}%
+	\belowdisplayskip \abovedisplayskip
+}
+\DeclareRobustCommand\footnotesize{%
+	\@setfontsize\footnotesize{6.77\@sb}{10.4\@sb}%
+	\abovedisplayskip 6\@sb \@plus2\@sb \@minus4\@sb
+	\abovedisplayshortskip \z@ \@plus\@sb
+	\belowdisplayshortskip 3\@sb \@plus\@sb \@minus2\@sb
+	\def\@listi{\leftmargin\leftmargini
+		\parsep 3pt \topsep\z@ \itemsep\z@
+		\itemsep \parsep}%
+	\belowdisplayskip \abovedisplayskip
+}
+\DeclareRobustCommand\scriptsize{\@setfontsize\scriptsize{5.92\@sb}{9.1\@sb}}
+\DeclareRobustCommand\tiny{\@setfontsize\tiny{4.23\@sb}{6.5\@sb}}
+\DeclareRobustCommand\large{\@setfontsize\large{10.15\@sb}{15.6\@sb}}
+\DeclareRobustCommand\Large{\@setfontsize\Large{11.85\@sb}{18.2\@sb}}
+\DeclareRobustCommand\LARGE{\@setfontsize\LARGE{14.38\@sb}{22.1\@sb}}
+\DeclareRobustCommand\huge{\@setfontsize\huge{16.92\@sb}{26\@sb}}
+\DeclareRobustCommand\Huge{\@setfontsize\Huge{21.15\@sb}{32.5\@sb}}
+\setlength\parindent{1cm}
+\setlength\smallskipamount{3\@sb \@plus 1\@sb \@minus 1\@sb}
+\setlength\medskipamount{6\@sb \@plus 2\@sb \@minus 2\@sb}
+\setlength\bigskipamount{12\@sb \@plus 4\@sb \@minus 4\@sb}
+\setlength\headheight{12\@sb}
+\setlength\headsep{25\@sb}
+\setlength\topskip{10\@sb}
+\setlength\footskip{30\@sb}
+\setlength\maxdepth{.5\topskip}
+\setlength\partopsep{2\@sb \@plus 1\@sb \@minus 1\@sb}
+\setlength\parindent{1cm}
+\setlength\parskip{6pt}
+\setlength\leftmargini{1cm}
+\leftmargin\leftmargini
+\setlength\leftmarginii{\leftmargini}
+\setlength\leftmarginiii{\leftmargini}
+\setlength\leftmarginiv{\leftmargini}
+\setlength\leftmarginv{\leftmargini}
+\setlength\leftmarginvi{\leftmargini}
+\setlength\labelsep{0.15cm}
+\setlength\labelwidth{\leftmargini}
+\addtolength\labelwidth{-\labelsep}
+\def\@listi{%
+	\leftmargin\leftmargini
+	\parsep 6pt \topsep\z@ \itemsep\z@%
+}
+\let\@listI\@listi
+\@listi
+\def\@listii{%
+	\leftmargin\leftmarginii
+	\labelwidth\leftmarginii
+	\advance\labelwidth-\labelsep
+	\parsep 6pt \topsep\z@ \itemsep\z@%
+}
+\def\@listiii{\@listii}
+\def\@listiv{\@listii}
+\def\@listv{\@listii}
+\def\@listvi{\@listii}
+
+\setlength\arraycolsep{0.25cm}
+\setlength\tabcolsep{0.25cm}
+\setlength\arrayrulewidth{0.5pt}
+\setlength\doublerulesep{2pt}
+\setlength\tabbingsep{\labelsep}
+\skip\@mpfootins=\skip\footins
+\setlength\fboxsep{0.25pt}
+\setlength\fboxrule{0.5pt}
+\endinput
+
+====================================================
+\ProvidesFile{femathesis.clo}
+
+\newdimen\@sb \@sb=1pt
+\renewcommand\normalsize{%
+	\@setfontsize\normalsize{11\@sb}{17\@sb}
+	\abovedisplayskip        13\@sb \@plus 3\@sb \@minus 6.5\@sb
+	\abovedisplayshortskip    \z@   \@plus 4\@sb
+	\belowdisplayshortskip    8\@sb \@plus 4\@sb \@minus 4\@sb
+	\belowdisplayskip \abovedisplayskip
+	\let\@listi\@listI}
+\normalsize
+\ifx\MakeRobust\@undefined \else
+	 \MakeRobust\normalsize
+\fi
+\DeclareRobustCommand\small{%
+	\@setfontsize\small{9.9\@sb}{15.3\@sb}
+	\abovedisplayskip        11\@sb \@plus 4\@sb \@minus 5\@sb
+	\abovedisplayshortskip    \z@   \@plus 3\@sb
+	\belowdisplayshortskip    5\@sb \@plus 3\@sb \@minus 3\@sb
+	\def\@listi{\leftmargin\leftmargini
+		\parsep 4pt \topsep\z@ \itemsep\z@
+		\itemsep \parsep}%
+	\belowdisplayskip \abovedisplayskip
+}
+\DeclareRobustCommand\footnotesize{%
+	\@setfontsize\footnotesize{8.8\@sb}{13.6\@sb}%
+	\abovedisplayskip        8\@sb \@plus 3\@sb \@minus 5\@sb
+	\abovedisplayshortskip    \z@   \@plus 1.3\@sb
+	\belowdisplayshortskip    4\@sb \@plus 1.3\@sb \@minus 3\@sb
+	\def\@listi{\leftmargin\leftmargini
+		\parsep 3pt \topsep\z@ \itemsep\z@
+		\itemsep \parsep}%
+	\belowdisplayskip \abovedisplayskip
+}
+\DeclareRobustCommand\scriptsize{\@setfontsize\scriptsize{7.7\@sb}{11.9\@sb}}
+\DeclareRobustCommand\tiny{\@setfontsize\tiny{5.5\@sb}{8.5\@sb}}
+\DeclareRobustCommand\large{\@setfontsize\large{13.2\@sb}{20.4\@sb}}
+\DeclareRobustCommand\Large{\@setfontsize\Large{15.4\@sb}{23.8\@sb}}
+\DeclareRobustCommand\LARGE{\@setfontsize\LARGE{18.7\@sb}{28.9\@sb}}
+\DeclareRobustCommand\huge{\@setfontsize\huge{22\@sb}{34\@sb}}
+\DeclareRobustCommand\Huge{\@setfontsize\Huge{27.5\@sb}{42.5\@sb}}
+\setlength\parindent{1cm}
+\setlength\smallskipamount{3.9\@sb \@plus 1.3\@sb \@minus 1.3\@sb}
+\setlength\medskipamount{7.8\@sb \@plus 2.6\@sb \@minus 2.6\@sb}
+\setlength\bigskipamount{15.6\@sb \@plus 5.2\@sb \@minus 5.2\@sb}
+\setlength\headheight{15.6\@sb}
+\setlength\headsep{32.5\@sb}
+\setlength\topskip{13\@sb}
+\setlength\footskip{39\@sb}
+\setlength\maxdepth{.5\topskip}
+\setlength\partopsep{2.6\@sb \@plus 1.3\@sb \@minus 1.3\@sb}
+\setlength\parindent{1cm}
+\setlength\parskip{6pt}
+\setlength\leftmargini{1cm}
+\leftmargin\leftmargini
+\setlength\leftmarginii{\leftmargini}
+\setlength\leftmarginiii{\leftmargini}
+\setlength\leftmarginiv{\leftmargini}
+\setlength\leftmarginv{\leftmargini}
+\setlength\leftmarginvi{\leftmargini}
+\setlength\labelsep{0.15cm}
+\setlength\labelwidth{\leftmargini}
+\addtolength\labelwidth{-\labelsep}
+\def\@listi{%
+	\leftmargin\leftmargini
+	\parsep 7.8pt \topsep\z@ \itemsep\z@%
+}
+\let\@listI\@listi
+\@listi
+\def\@listii{%
+	\leftmargin\leftmarginii
+	\labelwidth\leftmarginii
+	\advance\labelwidth-\labelsep
+	\parsep 7.8pt \topsep\z@ \itemsep\z@%
+}
+\def\@listiii{\@listii}
+\def\@listiv{\@listii}
+\def\@listv{\@listii}
+\def\@listvi{\@listii}
+
+\setlength\arraycolsep{0.25cm}
+\setlength\tabcolsep{0.25cm}
+\setlength\arrayrulewidth{0.5pt}
+\setlength\doublerulesep{2pt}
+\setlength\tabbingsep{\labelsep}
+\skip\@mpfootins=\skip\footins
+\setlength\fboxsep{0.25pt}
+\setlength\fboxrule{0.5pt}
+\endinput
